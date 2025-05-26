@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -115,7 +114,7 @@ const ProjectShowcase = () => {
                     <Button
                       variant="outline"
                       size="sm"
-                      onClick={() => window.open(project.githubUrl, '_blank')}
+                      onClick={() => window.open(project.githubUrl, '_blank', 'noopener,noreferrer')}
                       className="flex items-center justify-center gap-2"
                     >
                       <Github size={14} />
@@ -124,7 +123,7 @@ const ProjectShowcase = () => {
                     <Button
                       variant="outline"
                       size="sm"
-                      onClick={() => window.open(project.liveUrl, '_blank')}
+                      onClick={() => window.open(project.liveUrl, '_blank', 'noopener,noreferrer')}
                       className="flex items-center justify-center gap-2"
                     >
                       <ExternalLink size={14} />
@@ -150,7 +149,7 @@ const ProjectShowcase = () => {
             variant="outline"
             size="lg"
             className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3"
-            onClick={() => window.open('https://github.com/surendrasana', '_blank')}
+            onClick={() => window.open('https://github.com/surendrasana', '_blank', 'noopener,noreferrer')}
           >
             <Github size={20} className="mr-2" />
             View All Projects on GitHub

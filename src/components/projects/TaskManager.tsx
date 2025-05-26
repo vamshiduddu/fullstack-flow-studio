@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Plus, Check, Trash2, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -42,7 +41,11 @@ const TaskManager = () => {
     }
   ]);
 
-  const [newTask, setNewTask] = useState({ title: '', description: '', priority: 'medium' as const });
+  const [newTask, setNewTask] = useState({ 
+    title: '', 
+    description: '', 
+    priority: 'medium' as 'low' | 'medium' | 'high'
+  });
 
   const addTask = () => {
     if (newTask.title.trim()) {

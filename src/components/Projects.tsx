@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, Globe } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -116,7 +115,7 @@ const Projects = () => {
                   <Button
                     size="sm"
                     className="flex-1 bg-blue-600 hover:bg-blue-700 text-white"
-                    onClick={() => window.open(project.liveUrl, '_blank')}
+                    onClick={() => window.open(project.liveUrl, '_blank', 'noopener,noreferrer')}
                   >
                     <Globe size={16} className="mr-2" />
                     Live Demo
@@ -125,7 +124,7 @@ const Projects = () => {
                     size="sm"
                     variant="outline"
                     className="flex-1 border-slate-300 hover:bg-slate-50"
-                    onClick={() => window.open(project.githubUrl, '_blank')}
+                    onClick={() => window.open(project.githubUrl, '_blank', 'noopener,noreferrer')}
                   >
                     <Github size={16} className="mr-2" />
                     Code
@@ -141,7 +140,7 @@ const Projects = () => {
             variant="outline"
             size="lg"
             className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3"
-            onClick={() => window.open('https://github.com', '_blank')}
+            onClick={() => window.open('https://github.com', '_blank', 'noopener,noreferrer')}
           >
             <Github size={20} className="mr-2" />
             View More on GitHub
