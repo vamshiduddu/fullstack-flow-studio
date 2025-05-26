@@ -46,9 +46,17 @@ const Hero = () => {
           
           <div className="flex flex-wrap justify-center gap-4">
             <Button 
-              onClick={() => scrollToSection('about')}
+              onClick={() => scrollToSection('projects')}
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
+            >
+              View Projects
+            </Button>
+            <Button 
+              onClick={() => scrollToSection('about')}
+              variant="outline"
+              size="lg"
+              className="border-2 border-blue-200 text-blue-200 hover:bg-blue-200 hover:text-blue-900 px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
             >
               Learn More
             </Button>
