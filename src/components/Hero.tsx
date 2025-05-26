@@ -53,6 +53,13 @@ const Hero = () => {
               View Projects
             </Button>
             <Button 
+              onClick={() => scrollToSection('project-showcase')}
+              size="lg"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
+            >
+              Interactive Demos
+            </Button>
+            <Button 
               onClick={() => scrollToSection('about')}
               variant="outline"
               size="lg"
